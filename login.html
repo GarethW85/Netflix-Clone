@@ -1,13 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./CSS/loginStyle.css">
-    <title>NotNetflix || Login</title>
+<meta charset="UTF-8">
+<title>NotNetflix - Login Form </title>
+<!-- JS Links -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js'></script>
+<script src="/js/script.js" defer></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+<link rel="stylesheet" href="/css/loginStyle.css">
+<!-- netflix icon -->
+<link rel="icon" href="/images/netflix logo/netflixIcon2.ico">
+<!-- google fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    
+   <div id="app">
+      <div class="login-page">
+         <transition name="fade">
+            <div v-if="!registerActive" class="wallpaper-login"></div>
+         </transition>
+         <img src="/images/netflix logo/notnet.png" alt="notNetFlix Logo" id="netflixLogo">
+         <div class="wallpaper-register"></div>
+
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-4 col-md-6 col-sm-8 mx-auto">
+                  <div v-if="!registerActive" class="card login text-white" v-bind:class="{ error: emptyFields }"
+                     id="cardOpacity">
+                     <h1>Sign In</h1>
+                     <form class="form-group">
+                        <input v-model="emailLogin" type="email" class="form-control" placeholder="Email" required>
+                        <input v-model="passwordLogin" type="password" class="form-control" placeholder="Password" required>
+                        <input type="submit" class="btn btn-danger" @click="doLogin">
+                        <p>Don't have an account? <a class="text-danger" href="#"
+                              @click="registerActive = !registerActive, emptyFields = false">Sign up here</a>
+                        </p>
+                     </form>
+                  </div>
+                  <div v-else class="card register text-white" v-bind:class="{ error: emptyFields }" id="cardOpacity">
+                     <h1>Sign Up</h1>
+                     <form class="form-group">
+                        <input v-model="emailReg" type="email" class="form-control" placeholder="Email" required>
+                        <input v-model="passwordReg" type="password" class="form-control" placeholder="Password"required>
+                        <input v-model="confirmReg" type="password" class="form-control" placeholder="Confirm Password" required>
+                        <input type="submit" class="btn btn-danger" @click="doRegister">
+                        <p>Already have an account? <a class="text-danger" href="#"
+                              @click="registerActive = !registerActive, emptyFields = false">Sign in here</a>
+                        </p>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
 </body>
+
 </html>

@@ -1,0 +1,107 @@
+body {
+    font-family: 'Roboto', sans-serif, Helvetica;
+}
+
+p {
+    line-height: 1rem;
+}
+
+#netflixLogo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 15px;
+    height: 90px;
+}
+
+.card {
+    padding: 20px;
+}
+
+#cardOpacity {
+    background: #000;
+    border-radius: 10px;
+    box-shadow: 0 4px 30px #0000001a;
+    background: rgba(7, 7, 7, 0.753);
+}
+
+.btn {
+    background-color: rgb(173, 3, 3);
+    border: 1px solid red;
+    width: 100%;
+}
+
+.form-group {
+    opacity: 100%;
+}
+
+.form-group input {
+    margin-bottom: 20px;
+    height: 45px;
+}
+
+
+.login-page {
+    align-items: center;
+    display: flex;
+    height: 100vh;
+}
+
+.login-page .wallpaper-login {
+    background: linear-gradient(rgba(0, 0, 0, 1), rgba(247, 4, 4, 0.24)), url('https://wallpaperaccess.com/full/3658604.jpg') no-repeat center center;
+    background-size: cover;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+.login-page .fade-enter-active,
+.login-page .fade-leave-active {
+    transition: opacity 0.5s;
+}
+
+.login-page .fade-enter,
+.login-page .fade-leave-to {
+    opacity: 0;
+}
+
+.login-page .wallpaper-register {
+    background: linear-gradient(rgba(0, 0, 0, 1), rgba(1, 0, 0, 0.1)), url(https://images.unsplash.com/photo-1574267432553-4b4628081c31?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1931&q=80) no-repeat center center;
+    background-size: cover;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+.login-page h1 {
+    margin-bottom: 1.5rem;
+
+}
+
+.error {
+    animation-name: errorShake;
+    animation-duration: 0.3s;
+}
+
+@keyframes errorShake {
+    0% {
+        transform: translateX(-25px);
+    }
+
+    25% {
+        transform: translateX(25px);
+    }
+
+    50% {
+        transform: translateX(-25px);
+    }
+
+    75% {
+        transform: translateX(25px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
