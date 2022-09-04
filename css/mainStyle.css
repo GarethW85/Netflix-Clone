@@ -113,13 +113,6 @@ i {
     background: linear-gradient(to top, transparent,#000);
 }
 
-/* .netflix-home-video .bottom {
-    position: absolute;
-    top: 0%;
-    width: 100%;
-    height: 40px;
-    background: linear-gradient(to bottom, transparent,#141414);
-} */
 /* video */
 
 .netflix-home-video .content {
@@ -152,8 +145,23 @@ i {
     justify-content: center;
     margin-left: 20px;
     font-size: 12px;
+    
 }
 
+/* /link styling */
+a:link { 
+    text-decoration: none; 
+}
+a:visited { 
+    text-decoration: none;
+    color: #fff;
+ }
+a:hover { 
+    text-decoration: none;
+ }
+a:active {
+     text-decoration: none;
+     }
 
 /* styling the cards */
 
@@ -192,7 +200,6 @@ i {
 
 .slider1 {
     position: absolute;
-    /* top: 700px; */
     z-index: 500;
 }
 
