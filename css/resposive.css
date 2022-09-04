@@ -1,0 +1,31 @@
+@media (max-width: 767.98px){
+    .navbar-brand img {
+        width: 43px !important;
+    }
+
+    .netflix-padding-left {
+        padding-left: 10px !important;
+    }
+    
+    .netflix-padding-right {
+        padding-right: 10px !important;
+    }
+
+    .netflix-dropdown-box {
+        display: block !important;
+    }
+
+    .netflix-nav {
+        display: none;
+    }
+
+    i {
+        font-size: 12px;
+        cursor:pointer;
+        padding: 5px !important;
+    }
+
+    .netflix-profile {
+         margin-left: 5px !important;
+    }
+}

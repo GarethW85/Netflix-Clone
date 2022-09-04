@@ -4,11 +4,81 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="/images/netflix logo/netflixIcon2.ico">
+    <link rel="icon" href="/images/netflix logo/netflixIcon2.ico"> 
+   <!-- bootstrap CDN links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- css links -->
+    <link rel="stylesheet" href="/css/mainStyle.css">
+    <link rel="stylesheet" href="/css/resposive.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <title>NotNetflix - Home</title>
+    <!-- jquery cdn link -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
-    <img src="/images/netflix logo/notnet.png" alt="notNetFlix Logo" id="netflixLogo">
-    <h1>Hello World!</h1>
+    
+    <!-- NotNetflix Navbar -->
+    <nav class="navbar navbar-expand-lg netflix-navbar netflix-padding-left netflix-padding-right">
+        <div class="container-fluid"> 
+          
+           <div class="netflix-row">
+            <!-- left -->
+            <section class="left d-flex align-items-center">
+                <a class="navbar-brand" href="#">
+                    <img src="./images/netflix logo/notnet.png" alt="">
+                </a>
+                <!-- Dropdown -->
+                <div class=" netflix-dropdown-box dropdown">
+                    <button class="netflix-dropdown dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Browse
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Home</a></li>
+                      <li><a class="dropdown-item" href="#">TV Shows</a></li>
+                      <li><a class="dropdown-item" href="#">Movies</a></li>
+                      <li><a class="dropdown-item" href="#">News & popular</a></li>
+                      <li><a class="dropdown-item" href="#">My List</a></li>
+                    </ul>
+                  </div>
+                  <!-- Nav inks -->
+                  <div class="netflix-nav">
+                  <section>
+                    <button>HOME</button>
+                    <button>TV Shows</button>
+                    <button>Movies</button>
+                    <button>News & Popular</button>
+                    <button>My List</button>
+                  </section>
+                </div>
+            </section>
+            <!-- right -->
+             <section class="right d-flex align-items-center">
+                <i class="bi bi-search"></i>
+                <i class="bi bi-bell-fill"></i>
+                <div class="netflix-profile "></div>
+             </section>
+           </div>
+        </div>
+      </nav>
+
+    <!-- NotNetflix Navbar End -->
+
+    <!-- Video Contents -->
+    <div style="height : 3000px">
+        <section class="netflix-home-video">
+            <div class="top"></div>
+            <div class="bottom"></div>
+        </section>
+    </div>
+    <!-- Video Contents End -->
+
+    
+    <!-- Footer -->
+    <p>Footer</p>
+    <!-- Footer End -->
+    <script src="./js/index.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
 </body>
+
 </html>
