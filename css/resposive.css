@@ -28,4 +28,35 @@
     .netflix-profile {
          margin-left: 5px !important;
     }
+
+    .netflix-home-video .content .left {
+        margin-left: 25px !important;
+    }
+    .netflix-home-video .content .left img {
+        margin-top: 90px;
+        width: 200px;
+    }
+
+    button {
+        font-size: 10px !important;
+        width: max-content !important;
+        opacity: 0.8;
+    }
+    
+    .card {
+        width:150px;
+    }
+
+    .card-icon {
+        font-size: 17px !important;
+    }
+
+    .slider1 {
+        top: 250px;
+        margin-left: 0px;
+    }
+
+    .card-body {
+        top: 80px;
+    }
 }
