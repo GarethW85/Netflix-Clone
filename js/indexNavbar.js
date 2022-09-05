@@ -1,3 +1,5 @@
+// Styling the navbar when scrolling
+
 $(document).ready(function() {
     $(window).scroll(function(){
         let scroll = $(window).scrollTop();

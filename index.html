@@ -8,6 +8,8 @@
    <!-- bootstrap CDN links -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <!-- css links -->
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="/css/mainStyle.css">
     <link rel="stylesheet" href="/css/resposive.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
@@ -16,751 +18,128 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
-    
     <!-- NotNetflix Navbar -->
     <nav class="navbar navbar-expand-lg netflix-navbar netflix-padding-left netflix-padding-right" id="home">
-        <div class="container-fluid"> 
-          
-           <div class="netflix-row">
-            <!-- left -->
-            <section class="left d-flex align-items-center">
-                <a class="navbar-brand" href="#">
-                    <img src="./images/netflix logo/notnet.png" alt="">
-                </a>
-                <!-- Dropdown -->
-                <div class=" netflix-dropdown-box dropdown">
-                    <button class="netflix-dropdown dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Browse
-                    </button>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#" >Home</a></li>
-                      <li><a class="dropdown-item" href="#">Movies</a></li>
-                      <li><a class="dropdown-item" href="#">My List</a></li>
-                    </ul>
-                  </div>
-                  <!-- Nav inks -->
-                  <div class="netflix-nav">
-                  <section>
-                    <button>Home</button>
-                    <button>Movies</button>
-                    <button>My List</button>
-                  </section>
-                </div>
-            </section>
-            <!-- right -->
-             <section class="right d-flex align-items-center">
-                <i class="bi bi-search"></i>
-                <div class="netflix-profile"></div>
-                <button type="button" class="btn btn-danger logOut"><a href="./login.html">Log Out</a></button> 
-             </section>
-           </div>
+      <div class="container-fluid">
+        <div class="netflix-row">
+          <!-- left -->
+          <section class="left d-flex align-items-center">
+            <a class="navbar-brand" href="#">
+              <img src="./images/netflix logo/notnet.png" alt="">
+            </a>
+            <!-- Dropdown -->
+            <div class=" netflix-dropdown-box dropdown">
+              <button class="netflix-dropdown dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Browse
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Home</a></li>
+                <li><a class="dropdown-item" href="#">Search</a></li>
+                <li><a class="dropdown-item" href="./myList.html">My List</a></li>
+              </ul>
+            </div>
+            <!-- Nav inks -->
+            <div class="netflix-nav">
+              <section>
+                <button><a href="#">Home</a></button>
+                <button>Search</button>
+                <button><a href="./myList.html">My List</a></button>
+              </section>
+            </div>
+          </section>
+          <!-- right -->
+          <section class="right d-flex align-items-center">
+            <i class="bi bi-search"></i>
+            <div class="netflix-profile"></div>
+            <button type="button" class="btn btn-danger logOut"><a href="./login.html">Log Out</a></button>
+          </section>
         </div>
-      </nav>
+      </div>
+    </nav>
     <!-- NotNetflix Navbar End -->
-
-    <!-- Hero Video -->
-        <section class="netflix-home-video">
-            <div class="top"></div>
-            <div class="bottom"></div>
-            <video src="./video/HOOK 1991.mp4" autoplay muted loop></video>
-            <div class="content">
-                <section class="left">
-                    <img src="./video/Hook_movie_logo.webp" alt="hook movie">
-                    <div class="mt-2 d-flex">
-                        <button type="button" class="btn btn-light m-2"><i class="bi bi-play-fill" style="color: #000; padding:0px;"></i>Play Now</button>
-                        <button type="button" class="btn btn-secondary m-2"><i class="bi bi-info-circle" style="padding:3px;"></i>More Info</button>
-                </div>
-                </section>
-            </div>
-        </section>
-    <!-- Hero Video End -->
-
-    <!-- Main Content -->
-    <!-- Carousal -->
-    <div class="slider-box">
-        <section class="container-fluid slider1">
-            <div class="d-flex justify-content-between">
-                <p class="text-white" ><b>Coming Soon</b></p>
-                <div class="">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                  </div>
-            </div>
-            <!-- start -->
-            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-                
-                <div class="carousel-inner" style="position:relative; overflow:visible;">
-                    <!-- slide1 -->
-                  <div class="carousel-item active">
-                    <section class="d-flex justify"style="position:absolute;">
-                        <!-- card -->
-                        <div class="card">
-                            <img src="./images//movie thumbnails horizontal/Beast Horizontal.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                              <section class="d-flex justify-content-between">
-                                <div>    
-                                    <i class="bi bi-plus-circle card-icon"></i>
-                                </div>  
-                              </section>
-                              <section class="d-flex justify-content-between align-items-center">
-                                <p class="netflix-card-text m-0" style="color:rgb(0,186,0)"> 76% match</p>
-                                <span class="netflix-card-text m-2 text-white">Coming Soon</span>
-                                <span class="netflix-card-text m-2 border text-white p-1">4K</span>
-                              </section>
-                              <p class="m-0 netflix-card-text text-white">Chilling * Intense * Action</p>
-                            </div>
-                          </div>
-                          <!-- card end -->
-                          <!-- card -->
-                        <div class="card">
-                            <img src="./images//movie thumbnails horizontal/Blade horizontal.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                              <section class="d-flex justify-content-between">
-                                <div>    
-                                    <i class="bi bi-plus-circle card-icon"></i>
-                                </div>  
-                              </section>
-                              <section class="d-flex justify-content-between align-items-center">
-                                <p class="netflix-card-text m-0" style="color:rgb(0,186,0)"> 76% match</p>
-                                <span class="netflix-card-text m-2 text-white">Coming Soon</span>
-                                <span class="netflix-card-text m-2 border text-white p-1">4K</span>
-                              </section>
-                              <p class="m-0 netflix-card-text text-white">Chilling * Intense * Action</p>
-                            </div>
-                          </div>
-                          <!-- card end -->
-                          <!-- card -->
-                        <div class="card">
-                            <img src="./images//movie thumbnails horizontal/blazing samurai horizontal.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                              <section class="d-flex justify-content-between">
-                                <div>    
-                                    <i class="bi bi-plus-circle card-icon"></i>
-                                </div>  
-                              </section>
-                              <section class="d-flex justify-content-between align-items-center">
-                                <p class="netflix-card-text m-0" style="color:rgb(0,186,0)"> 76% match</p>
-                                <span class="netflix-card-text m-2 text-white">Coming Soon</span>
-                                <span class="netflix-card-text m-2 border text-white p-1">4K</span>
-                              </section>
-                              <p class="m-0 netflix-card-text text-white">Chilling * Intense * Action</p>
-                            </div>
-                          </div>
-                          <!-- card end -->
-                          <!-- card -->
-                        <div class="card">
-                            <img src="./images//movie thumbnails horizontal/dogtanian horizontal.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                              <section class="d-flex justify-content-between">
-                                <div>    
-                                    <i class="bi bi-plus-circle card-icon"></i>
-                                </div>  
-                              </section>
-                              <section class="d-flex justify-content-between align-items-center">
-                                <p class="netflix-card-text m-0" style="color:rgb(0,186,0)"> 76% match</p>
-                                <span class="netflix-card-text m-2 text-white">Coming Soon</span>
-                                <span class="netflix-card-text m-2 border text-white p-1">4K</span>
-                              </section>
-                              <p class="m-0 netflix-card-text text-white">Chilling * Intense * Action</p>
-                            </div>
-                          </div>
-                          <!-- card end -->
-                          <!-- card -->
-                        <div class="card">
-                            <img src="./images//movie thumbnails horizontal/Fall Horizontal.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                              <section class="d-flex justify-content-between">
-                                <div>    
-                                    <i class="bi bi-plus-circle card-icon"></i>
-                                </div>  
-                              </section>
-                              <section class="d-flex justify-content-between align-items-center">
-                                <p class="netflix-card-text m-0" style="color:rgb(0,186,0)"> 76% match</p>
-                                <span class="netflix-card-text m-2 text-white">Coming Soon</span>
-                                <span class="netflix-card-text m-2 border text-white p-1">4K</span>
-                              </section>
-                              <p class="m-0 netflix-card-text text-white">Chilling * Intense * Action</p>
-                            </div>
-                          </div>
-                          <!-- card end -->
-                          <!-- card -->
-                        <div class="card">
-                            <img src="./images//movie thumbnails horizontal/Miss Harris Horizontal.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                              <section class="d-flex justify-content-between">
-                                <div>    
-                                    <i class="bi bi-plus-circle card-icon"></i>
-                                </div>  
-                              </section>
-                              <section class="d-flex justify-content-between align-items-center">
-                                <p class="netflix-card-text m-0" style="color:rgb(0,186,0)"> 76% match</p>
-                                <span class="netflix-card-text m-2 text-white">Coming Soon</span>
-                                <span class="netflix-card-text m-2 border text-white p-1">4K</span>
-                              </section>
-                              <p class="m-0 netflix-card-text text-white">Chilling * Intense * Action</p>
-                            </div>
-                          </div>
-                    </section>
-                  </div>
-                  <!-- slide2 -->
-                  <div class="carousel-item">
-                    <section class="d-flex justify"style="position:absolute;">
-                        <!-- card -->
-                        <div class="card">
-                            <img src="./images//movie thumbnails horizontal/Big trip.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                              <section class="d-flex justify-content-between">
-                                <div>    
-                                    <i class="bi bi-plus-circle card-icon"></i>
-                                </div>                                
-                              </section>
-                              <section class="d-flex justify-content-between align-items-center">
-                                <p class="netflix-card-text m-0" style="color:rgb(0,186,0)"> 76% match</p>
-                                <span class="netflix-card-text m-2 text-white">Coming Soon</span>
-                                <span class="netflix-card-text m-2 border text-white p-1">4K</span>
-                              </section>
-                              <p class="m-0 netflix-card-text text-white">Chilling * Intense * Action</p>
-                            </div>
-                          </div>
-                          <!-- card end -->
-                          <!-- card -->
-                        <div class="card">
-                            <img src="./images//movie thumbnails horizontal/Brahmastra.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                              <section class="d-flex justify-content-between">
-                                <div>    
-                                    <i class="bi bi-plus-circle card-icon"></i>
-                                </div>  
-                              </section>
-                              <section class="d-flex justify-content-between align-items-center">
-                                <p class="netflix-card-text m-0" style="color:rgb(0,186,0)"> 76% match</p>
-                                <span class="netflix-card-text m-2 text-white">Coming Soon</span>
-                                <span class="netflix-card-text m-2 border text-white p-1">4K</span>
-                              </section>
-                              <p class="m-0 netflix-card-text text-white">Chilling * Intense * Action</p>
-                            </div>
-                          </div>
-                          <!-- card end -->
-                          <!-- card -->
-                        <div class="card">
-                            <img src="./images//movie thumbnails horizontal/DBZ.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                              <section class="d-flex justify-content-between">
-                                <div>    
-                                    <i class="bi bi-plus-circle card-icon"></i>
-                                </div>  
-                              </section>
-                              <section class="d-flex justify-content-between align-items-center">
-                                <p class="netflix-card-text m-0" style="color:rgb(0,186,0)"> 76% match</p>
-                                <span class="netflix-card-text m-2 text-white">Coming Soon</span>
-                                <span class="netflix-card-text m-2 border text-white p-1">4K</span>
-                              </section>
-                              <p class="m-0 netflix-card-text text-white">Chilling * Intense * Action</p>
-                            </div>
-                          </div>
-                          <!-- card end -->
-                          <!-- card -->
-                        <div class="card">
-                            <img src="./images//movie thumbnails horizontal/Devils Light.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                              <section class="d-flex justify-content-between">
-                                <div>    
-                                    <i class="bi bi-plus-circle card-icon"></i>
-                                </div>  
-                              </section>
-                              <section class="d-flex justify-content-between align-items-center">
-                                <p class="netflix-card-text m-0" style="color:rgb(0,186,0)"> 76% match</p>
-                                <span class="netflix-card-text m-2 text-white">Coming Soon</span>
-                                <span class="netflix-card-text m-2 border text-white p-1">4K</span>
-                              </section>
-                              <p class="m-0 netflix-card-text text-white">Chilling * Intense * Action</p>
-                            </div>
-                          </div>
-                          <!-- card end -->
-                          <!-- card -->
-                        <div class="card">
-                            <img src="./images//movie thumbnails horizontal/Disney Elemental.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                              <section class="d-flex justify-content-between">
-                                <div>    
-                                    <i class="bi bi-plus-circle card-icon"></i>
-                                </div>  
-                              </section>
-                              <section class="d-flex justify-content-between align-items-center">
-                                <p class="netflix-card-text m-0" style="color:rgb(0,186,0)"> 76% match</p>
-                                <span class="netflix-card-text m-2 text-white">Coming Soon</span>
-                                <span class="netflix-card-text m-2 border text-white p-1">4K</span>
-                              </section>
-                              <p class="m-0 netflix-card-text text-white">Chilling * Intense * Action</p>
-                            </div>
-                          </div>
-                          <!-- card end -->
-                    </section>
-                  </div>
-                  <!-- slide3 -->
-                  <div class="carousel-item">
-                    <section class="d-flex justify"style="position:absolute;">
-                        <!-- card -->
-                        <div class="card">
-                            <img src="./images//movie thumbnails horizontal/Halloween Ends.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                              <section class="d-flex justify-content-between">
-                                <div>    
-                                    <i class="bi bi-plus-circle card-icon"></i>
-                                </div>  
-                              </section>
-                              <section class="d-flex justify-content-between align-items-center">
-                                <p class="netflix-card-text m-0" style="color:rgb(0,186,0)"> 76% match</p>
-                                <span class="netflix-card-text m-2 text-white">Coming Soon</span>
-                                <span class="netflix-card-text m-2 border text-white p-1">4K</span>
-                              </section>
-                              <p class="m-0 netflix-card-text text-white">Chilling * Intense * Action</p>
-                            </div>
-                          </div>
-                          <!-- card end -->
-                          <!-- card -->
-                        <div class="card">
-                            <img src="./images//movie thumbnails horizontal/Last seen alive.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                              <section class="d-flex justify-content-between">
-                                <div>    
-                                    <i class="bi bi-plus-circle card-icon"></i>
-                                </div>  
-                              </section>
-                              <section class="d-flex justify-content-between align-items-center">
-                                <p class="netflix-card-text m-0" style="color:rgb(0,186,0)"> 76% match</p>
-                                <span class="netflix-card-text m-2 text-white">Coming Soon</span>
-                                <span class="netflix-card-text m-2 border text-white p-1">4K</span>
-                              </section>
-                              <p class="m-0 netflix-card-text text-white">Chilling * Intense * Action</p>
-                            </div>
-                          </div>
-                          <!-- card end -->
-                          <!-- card -->
-                        <div class="card">
-                            <img src="./images//movie thumbnails horizontal/Memory.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                              <section class="d-flex justify-content-between">
-                                <div>    
-                                    <i class="bi bi-plus-circle card-icon"></i>
-                                </div>  
-                              </section>
-                              <section class="d-flex justify-content-between align-items-center">
-                                <p class="netflix-card-text m-0" style="color:rgb(0,186,0)"> 76% match</p>
-                                <span class="netflix-card-text m-2 text-white">Coming Soon</span>
-                                <span class="netflix-card-text m-2 border text-white p-1">4K</span>
-                              </section>
-                              <p class="m-0 netflix-card-text text-white">Chilling * Intense * Action</p>
-                            </div>
-                          </div>
-                          <!-- card end -->
-                          <!-- card -->
-                        <div class="card">
-                            <img src="./images//movie thumbnails horizontal/MI Dead Reckoning.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                              <section class="d-flex justify-content-between">
-                                <div>    
-                                    <i class="bi bi-plus-circle card-icon"></i>
-                                </div>  
-                              </section>
-                              <section class="d-flex justify-content-between align-items-center">
-                                <p class="netflix-card-text m-0" style="color:rgb(0,186,0)"> 76% match</p>
-                                <span class="netflix-card-text m-2 text-white">Coming Soon</span>
-                                <span class="netflix-card-text m-2 border text-white p-1">4K</span>
-                              </section>
-                              <p class="m-0 netflix-card-text text-white">Chilling * Intense * Action</p>
-                            </div>
-                          </div>
-                          <!-- card end -->
-                          <!-- card -->
-                        <div class="card">
-                            <img src="./images//movie thumbnails horizontal/The Women King.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                              <section class="d-flex justify-content-between">
-                                <div>    
-                                    <i class="bi bi-plus-circle card-icon"></i>
-                                </div>  
-                              </section>
-                              <section class="d-flex justify-content-between align-items-center">
-                                <p class="netflix-card-text m-0" style="color:rgb(0,186,0)"> 76% match</p>
-                                <span class="netflix-card-text m-2 text-white">Coming Soon</span>
-                                <span class="netflix-card-text m-2 border text-white p-1">4K</span>
-                              </section>
-                              <p class="m-0 netflix-card-text text-white">Chilling * Intense * Action</p>
-                            </div>
-                          </div>
-                          <!-- card end -->      
-                    </section>
-                  </div>
-                </div>
-                
-              </div>
-            <!-- end -->
-        </section>
-    </div>
-    <!-- Carousal End -->
-    <div class="container-fluid slider-box2 ">
-        <section class="d-flex justify-content-between margin-right margin-title">
-          <p class="text-white"> <b>Whats new in Hollywood</b> </p>          
-        </section>
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-          
-          <div class="carousel-inner" style="position: relative; overflow: visible;">
-            <div class="carousel-item active">
-              <section class="d-flex" >
-                <div class="card" >
-                  <img src="./images/movie thumbnails/Braven.jpg" class="card-img-top" alt="...">
-                  <div class="card-body"> 
-                      <section class="d-flex justify-content-between">
-                        <div>
-                          <i class="bi bi-play-circle-fill card-icon"  ></i>
-                          <i  class="bi bi-plus-circle card-icon"></i>
-                        </div>
-                        <div>
-                          <i class="bi bi-arrow-down-circle card-icon"></i>
-                        </div>
-                      </section>
-                      <section class="d-flex align-items-center justify-content-between" >
-                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">97% match</p> 
-                           <span class="m-2 netflix-card-text text-white">Hollywood</span> <span class="border netflix-card-text p-1 text-white">HD</span>
-                        
-                        </section>
-                        <span class="netflix-card-text text-white">Provocative • Psychological • Thriller</span>
-                  </div>
-                </div>
-                <div class="card">
-                  <img src="./images/movie thumbnails/Deadpool coming soon.jpg" class="card-img-top" alt="...">
-                  <div class="card-body"> 
-                    <section class="d-flex justify-content-between">
-                      <div>
-                        <i class="bi bi-play-circle-fill card-icon"  ></i>
-                        <i  class="bi bi-plus-circle card-icon"></i>
-                      </div>
-                      <div>
-                        <i class="bi bi-arrow-down-circle card-icon"></i>
-                      </div>
-                    </section>
-                    <section class="d-flex align-items-center justify-content-between" >
-                       <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">97% match</p> 
-                         <span class="m-2 netflix-card-text text-white">Hollywood</span> <span class="border netflix-card-text p-1 text-white">HD</span>
-                      
-                      </section>
-                      <span class="netflix-card-text text-white">Provocative • Psychological • Thriller</span>
-                </div>
-                </div>
-                <div class="card">
-                  <img src="./images/movie thumbnails/Glass.jpg" class="card-img-top" alt="...">
-                  <div class="card-body"> 
-                    <section class="d-flex justify-content-between">
-                      <div>
-                        <i class="bi bi-play-circle-fill card-icon"  ></i>
-                        <i  class="bi bi-plus-circle card-icon"></i>
-                      </div>
-                      <div>
-                        <i class="bi bi-arrow-down-circle card-icon"></i>
-                      </div>
-                    </section>
-                    <section class="d-flex align-items-center justify-content-between" >
-                       <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">97% match</p> 
-                         <span class="m-2 netflix-card-text text-white">Hollywood</span> <span class="border netflix-card-text p-1 text-white">HD</span>
-                      
-                      </section>
-                      <span class="netflix-card-text text-white">Provocative • Psychological • Thriller</span>
-                </div> <div class="card-body"> 
-                      <section class="d-flex justify-content-between">
-                        <div>
-                          <i class="bi bi-play-circle-fill card-icon"  ></i>
-                          <i  class="bi bi-plus-circle card-icon"></i>
-                        </div>
-                        <div>
-                          <i class="bi bi-arrow-down-circle card-icon"></i>
-                        </div>
-                      </section>
-                      <section class="d-flex align-items-center justify-content-between" >
-                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">97% match</p> 
-                           <span class="m-2 netflix-card-text text-white">Hollywood</span> <span class="border netflix-card-text p-1 text-white">HD</span>
-                        
-                        </section>
-                        <span class="netflix-card-text text-white">Provocative • Psychological • Thriller</span>
-                  </div>
-                </div>
-                <div class="card" >
-                  <img src="./images/movie thumbnails/Hook.jpg" class="card-img-top" alt="...">
-                  <div class="card-body"> 
-                    <section class="d-flex justify-content-between">
-                      <div>
-                        <i class="bi bi-play-circle-fill card-icon"  ></i>
-                        <i  class="bi bi-plus-circle card-icon"></i>
-                      </div>
-                      <div>
-                        <i class="bi bi-arrow-down-circle card-icon"></i>
-                      </div>
-                    </section>
-                    <section class="d-flex align-items-center justify-content-between" >
-                       <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">97% match</p> 
-                         <span class="m-2 netflix-card-text text-white">Hollywood</span> <span class="border netflix-card-text p-1 text-white">HD</span>
-                      
-                      </section>
-                      <span class="netflix-card-text text-white">Provocative • Psychological • Thriller</span>
-                </div>
-                </div>
-                <div class="card" >
-                  <img src="./images/movie thumbnails/Lord of war.jpg" class="card-img-top" alt="...">
-                  <div class="card-body"> 
-                    <section class="d-flex justify-content-between">
-                      <div>
-                        <i class="bi bi-play-circle-fill card-icon"  ></i>
-                        <i  class="bi bi-plus-circle card-icon"></i>
-                      </div>
-                      <div>
-                        <i class="bi bi-arrow-down-circle card-icon"></i>
-                      </div>
-                    </section>
-                    <section class="d-flex align-items-center justify-content-between" >
-                       <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">97% match</p> 
-                         <span class="m-2 netflix-card-text text-white">Hollywood</span> <span class="border netflix-card-text p-1 text-white">HD</span>
-                      
-                      </section>
-                      <span class="netflix-card-text text-white">Provocative • Psychological • Thriller</span>
-                </div>
-                </div>
-                <div class="card" >
-                  <img src="./images/movie thumbnails/MastersOfTheUniverse 1987.jpg" class="card-img-top" alt="...">
-                  <div class="card-body"> 
-                    <section class="d-flex justify-content-between">
-                      <div>
-                        <i class="bi bi-play-circle-fill card-icon"  ></i>
-                        <i  class="bi bi-plus-circle card-icon"></i>
-                      </div>
-                      <div>
-                        <i class="bi bi-arrow-down-circle card-icon"></i>
-                      </div>
-                    </section>
-                    <section class="d-flex align-items-center justify-content-between" >
-                       <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">97% match</p> 
-                         <span class="m-2 netflix-card-text text-white">Hollywood</span> <span class="border netflix-card-text p-1 text-white">HD</span>
-                      
-                      </section>
-                      <span class="netflix-card-text text-white">Provocative • Psychological • Thriller</span>
-                </div>
-                </div>
-              </section>
-            </div>
-            </div>
-          
-        </div>
-    </div>
-
-    <div class="container-fluid slider-box3">
-        <section class="d-flex justify-content-between margin-right margin-title">
-          <p class="text-white"> <b>Leaving Soon</b> </p>          
-        </section>
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-          
-          <div class="carousel-inner" style="position: relative; overflow: visible;">
-            <div class="carousel-item active">
-              <section class="d-flex" >
-                <div class="card" >
-                  <img src="./images/movie thumbnails/Passengers.jpg" class="card-img-top" alt="...">
-                  <div class="card-body"> 
-                      <section class="d-flex justify-content-between">
-                        <div>
-                          <i class="bi bi-play-circle-fill card-icon"  ></i>
-                          <i  class="bi bi-plus-circle card-icon"></i>
-                        </div>
-                        <div>
-                          <i class="bi bi-arrow-down-circle card-icon"></i>
-                        </div>
-                      </section>
-                      <section class="d-flex align-items-center justify-content-between" >
-                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">97% match</p> 
-                           <span class="m-2 netflix-card-text text-white">Leaving Soon</span> <span class="border netflix-card-text p-1 text-white">HD</span>
-                        
-                        </section>
-                        <span class="netflix-card-text text-white">Provocative • Psychological • Thriller</span>
-                  </div>
-                </div>
-                <div class="card">
-                  <img src="./images/movie thumbnails/Rush.jpg" class="card-img-top" alt="...">
-                  <div class="card-body"> 
-                    <section class="d-flex justify-content-between">
-                      <div>
-                        <i class="bi bi-play-circle-fill card-icon"  ></i>
-                        <i  class="bi bi-plus-circle card-icon"></i>
-                      </div>
-                      <div>
-                        <i class="bi bi-arrow-down-circle card-icon"></i>
-                      </div>
-                    </section>
-                    <section class="d-flex align-items-center justify-content-between" >
-                       <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">97% match</p> 
-                         <span class="m-2 netflix-card-text text-white">Leaving Soon</span> <span class="border netflix-card-text p-1 text-white">HD</span>
-                      
-                      </section>
-                      <span class="netflix-card-text text-white">Provocative • Psychological • Thriller</span>
-                </div>
-                </div>
-                <div class="card">
-                  <img src="./images/movie thumbnails/Slince of the Lambs.jpg" class="card-img-top" alt="...">
-                  <div class="card-body"> 
-                    <section class="d-flex justify-content-between">
-                      <div>
-                        <i class="bi bi-play-circle-fill card-icon"  ></i>
-                        <i  class="bi bi-plus-circle card-icon"></i>
-                      </div>
-                      <div>
-                        <i class="bi bi-arrow-down-circle card-icon"></i>
-                      </div>
-                    </section>
-                    <section class="d-flex align-items-center justify-content-between" >
-                       <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">97% match</p> 
-                         <span class="m-2 netflix-card-text text-white">Leaving Soon</span> <span class="border netflix-card-text p-1 text-white">HD</span>
-                      
-                      </section>
-                      <span class="netflix-card-text text-white">Provocative • Psychological • Thriller</span>
-                </div> <div class="card-body"> 
-                      <section class="d-flex justify-content-between">
-                        <div>
-                          <i class="bi bi-play-circle-fill card-icon"  ></i>
-                          <i  class="bi bi-plus-circle card-icon"></i>
-                        </div>
-                        <div>
-                          <i class="bi bi-arrow-down-circle card-icon"></i>
-                        </div>
-                      </section>
-                      <section class="d-flex align-items-center justify-content-between" >
-                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">97% match</p> 
-                           <span class="m-2 netflix-card-text text-white">Leaving Soon</span> <span class="border netflix-card-text p-1 text-white">HD</span>
-                        
-                        </section>
-                        <span class="netflix-card-text text-white">Provocative • Psychological • Thriller</span>
-                  </div>
-                </div>
-                <div class="card" >
-                  <img src="./images/movie thumbnails/spencer.jpg" class="card-img-top" alt="...">
-                  <div class="card-body"> 
-                    <section class="d-flex justify-content-between">
-                      <div>
-                        <i class="bi bi-play-circle-fill card-icon"  ></i>
-                        <i  class="bi bi-plus-circle card-icon"></i>
-                      </div>
-                      <div>
-                        <i class="bi bi-arrow-down-circle card-icon"></i>
-                      </div>
-                    </section>
-                    <section class="d-flex align-items-center justify-content-between" >
-                       <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">97% match</p> 
-                         <span class="m-2 netflix-card-text text-white">Leaving Soon</span> <span class="border netflix-card-text p-1 text-white">HD</span>
-                      
-                      </section>
-                      <span class="netflix-card-text text-white">Provocative • Psychological • Thriller</span>
-                </div>
-                </div>
-                <div class="card" >
-                  <img src="./images/movie thumbnails/The American.jpg" class="card-img-top" alt="...">
-                  <div class="card-body"> 
-                    <section class="d-flex justify-content-between">
-                      <div>
-                        <i class="bi bi-play-circle-fill card-icon"  ></i>
-                        <i  class="bi bi-plus-circle card-icon"></i>
-                      </div>
-                      <div>
-                        <i class="bi bi-arrow-down-circle card-icon"></i>
-                      </div>
-                    </section>
-                    <section class="d-flex align-items-center justify-content-between" >
-                       <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">97% match</p> 
-                         <span class="m-2 netflix-card-text text-white">Leaving Soon</span> <span class="border netflix-card-text p-1 text-white">HD</span>
-                      
-                      </section>
-                      <span class="netflix-card-text text-white">Provocative • Psychological • Thriller</span>
-                </div>
-                </div>
-                <div class="card" >
-                  <img src="./images/movie thumbnails/The Imitation game.jpg" class="card-img-top" alt="...">
-                  <div class="card-body"> 
-                    <section class="d-flex justify-content-between">
-                      <div>
-                        <i class="bi bi-play-circle-fill card-icon"  ></i>
-                        <i  class="bi bi-plus-circle card-icon"></i>
-                      </div>
-                      <div>
-                        <i class="bi bi-arrow-down-circle card-icon"></i>
-                      </div>
-                    </section>
-                    <section class="d-flex align-items-center justify-content-between" >
-                       <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">97% match</p> 
-                         <span class="m-2 netflix-card-text text-white">Leaving Soon</span> <span class="border netflix-card-text p-1 text-white">HD</span>
-                      
-                      </section>
-                      <span class="netflix-card-text text-white">Provocative • Psychological • Thriller</span>
-                </div>
-                </div>
-              </section>
-            </div>
-            </div>
-          
-        </div>
-    </div>
-    <!-- Main Content End -->
-
     
-    <!-- <div class="movies">
-        <script src="./js/main.js" ></script>
-    </div> -->
-
-
+    <!-- Hero Video -->
+    <section class="netflix-home-video">
+      <div class="top"></div>
+      <div class="bottom"></div>
+      <video src="./video/HOOK 1991.mp4" autoplay muted loop></video>
+      <div class="content">
+        <section class="left">
+          <img src="./video/Hook_movie_logo.webp" alt="hook movie">
+          <div class="mt-2 d-flex">
+            <button type="button" class="btn btn-light m-2"><i class="bi bi-play-fill"
+                style="color: #000; padding:0px;"></i>Play Now</button>
+            <button type="button" class="btn btn-secondary m-2"><i class="bi bi-info-circle" style="padding:3px;"></i>More
+              Info</button>
+          </div>
+        </section>
+      </div>
+    </section>
+    <!-- Hero Video End -->
+    
+    <!-- Main Section -->
+    <div class="container-fluid m-0">
+      <header class="main">
+        <h1 class="heading">Coming Soon</h1>
+      </header>
+    </div>
+    <!-- Main Section End -->
     
     <!-- Footer -->
     <div class="container footer">
-        <div class="row">
-            <div class="col-md-10 mx-auto">
-                <div class="row">
-                    <div class="col-md-3">
-                        <ul>
-                            <li>Audio & Subtiltes</li>
-                            <li>Contact</li>
-                            <li>Media</li>
-                            <li>Privacy</li>
-                        </ul>
-                    </div>
-                    <div class="col-md-3">
-                        <ul>
-                            <li>Aubtilte</li>
-                            <li>Invest</li>
-                            <li>Terms</li>
-                            <li>Notice Period</li>
-                        </ul>
-                    </div>
-                    <div class="col-md-3">
-                        <ul>
-                            <li>Country</li>
-                            <li>Programs</li>                            
-                        </ul>
-                    </div>
-                    <div class="col-md-3">
-                        <ul>
-                            <li>Subscribe</li>
-                            <li>Complaints</li>
-                            <li>Mission Statement</li>
-                        </ul>
-                    </div>
-                </div>
+      <div class="row">
+        <div class="col-md-10 mx-auto">
+          <div class="row">
+            <div class="col-md-3">
+              <ul>
+                <li>Audio Description</li>
+                <li>Investor Relation</li>
+                <li>Legal Notices</li>
+              </ul>
             </div>
-            <div class="col-md-10 mx-auto">
-                <div class="row">
-                    <div class="col-12">
-                        <p class="copyright" >Designed by <b style="color:white;">GarethW</b></p>
-                    </div>
-                </div>
+            <div class="col-md-3">
+              <ul>
+                <li>Help Center</li>
+                <li>Jobs</li>
+                <li>Cookie Preferences</li>
+              </ul>
             </div>
+            <div class="col-md-3">
+              <ul>
+                <li>Gift Cards</li>
+                <li>Terms of Use</li>
+                <li>Corporate Information</li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <ul>
+                <li>Media Center</li>
+                <li>Privacy</li>
+                <li>Contact Us</li>
+              </ul>
+            </div>
+          </div>
         </div>
+        <div class="col-md-10 mx-auto">
+          <div class="row">
+            <div class="col-12">
+              <p class="copyright">Designed by <b style="color:white;">GarethW</b></p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- Footer End -->
-    <script src="./js/index.js" ></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-
+    
+    <!-- Scripts -->
+    <Script src="./js/api.js"></Script>
+    <Script src="/js/scroll.js"></Script>
+    <Script src="/js/main.js"></Script>
+    <script src="./js/indexNavbar.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <!-- Scripts End -->
 </body>
 
 </html>

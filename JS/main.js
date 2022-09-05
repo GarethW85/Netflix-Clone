@@ -1,26 +1,67 @@
+// Main Content Section JS
 
-    //Get Movie Data from IMDB ... need to implemnt this for the search option
-    
-    const options = {
-        method: 'GET',
-        headers: {
-            'X-RapidAPI-Key': '859839a56cmshc14c19ec3cc0281p13b805jsnf834ea070662',
-            'X-RapidAPI-Host': 'imdb8.p.rapidapi.com'
+const main = document.querySelector('.main');
+
+fetch(genres_list_http + new URLSearchParams({
+    api_key: api_key
+}))
+.then(res => res.json())
+.then(data => {
+    data.genres.forEach(item => {
+        fetchMoviesListByGenres(item.id, item.name);
+    })
+});
+
+const fetchMoviesListByGenres = (id, genres) => {
+    fetch(movie_genres_http + new URLSearchParams({
+        api_key: api_key,
+        with_genres: id,
+        page: Math.floor(Math.random() * 3) + 1
+    }))
+    .then(res => res.json())
+    .then(data => {
+        makeCategoryElement(`${genres}_movies`, data.results);        
+    })
+    .catch(err => console.log(err));
+}
+
+const makeCategoryElement = (category, data) => {
+    main.innerHTML += `
+    <div class="movie-list">
+
+        <button class="pre-btn"><i class="bi bi-chevron-left"></i></button>
+
+        <h1 class="movie-category">${category.split("_").join(" ")}</h1>
+        <div class="movie-container" id="${category}">
+                
+        </div>
+        <button class="nxt-btn"><i class="bi bi-chevron-right"></i></button>
+    </div>
+    `;
+    makeCards(category,data);
+}
+
+const makeCards = (id, data) => {
+    const movieContainer = document.getElementById(id);
+    data.forEach ((item, i) =>{
+        if(item.backdrop_path == null){
+            item.backdrop_path = item.poster_path;
+            if(item.backdrop_path == null){
+                return;
+            }
         }
-    };
-    
-    fetch('https://imdb8.p.rapidapi.com/auto-complete?q=game', options)
-        .then(response => response.json())
-        .then (response => {
-            const list = response.d;
-            
-            list.map((item) => {
-                const name = item.l;
-                const poster = item.i.imageUrl;
-                const movie = `<li><img src="${poster}"> <h2>${name}</h2></li>`
 
-                document.querySelector('.movies').innerHTML += movie
-            })
-        })
-        // .then(response => console.log(response))
-        .catch(err => console.error(err));
+        movieContainer.innerHTML += `
+        <div class="movie" onclick="location.href = '/${item.id}'">
+            <img src="${img_url}${item.backdrop_path}" alt="" width="300px">
+            <p class="movie-title">${item.title}</p>
+        </div>
+        `;
+
+        if(i == data.length - 1){
+            setTimeout(() =>{
+                setupScrolling();
+            }, 100);
+        }
+    })
+}
