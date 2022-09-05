@@ -245,8 +245,8 @@ a:active {
     height: 200px;
     top: 50%;
     transform: translateY(-50%);
-    width: 1.5vw;
-    background: #141414;
+    width: 2vw;
+    background: transparent;
     border: none;
     outline: none;
     opacity: 0;
