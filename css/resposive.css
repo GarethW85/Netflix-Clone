@@ -59,4 +59,8 @@
     .card-body {
         top: 80px;
     }
+
+    #hero-logo {
+        width:100px;
+    }
 }

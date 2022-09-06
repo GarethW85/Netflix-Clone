@@ -99,7 +99,7 @@ i {
     cursor: pointer;
 }
 
-/* video */
+/* hero banner */
 .netflix-home-video video {
     width: 100%;
 
@@ -109,11 +109,23 @@ i {
     position: absolute;
     top: 0%;
     width: 100%;
-    height: 30px;
+    height: 60px;
     background: linear-gradient(to top, transparent,#000);
 }
 
-/* video */
+.bottom {
+    height: 60px;
+    bottom:0 ;
+    background: linear-gradient(to top, transparent,rgba(0, 0, 0, 0.822));
+    box-shadow: 30% #000;   
+    
+}
+/* hero banner */
+
+#hero-logo {
+    width:300px;
+}
+
 
 .netflix-home-video .content {
     position: absolute;
