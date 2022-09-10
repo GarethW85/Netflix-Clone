@@ -5,6 +5,14 @@ body {
     height : 3000px"
 }
 
+.textbox {
+    width: 400px;
+    height: 300px;
+    background-color: #141414;
+    color: #fff;
+    padding: 2%;
+    border: 3px solid black;   
+}
 
 .netflix-padding-left {
     padding-left: 57px;
@@ -143,6 +151,7 @@ i {
 .netflix-home-video .content .left img {
     margin-top: 190px;
 }
+
 .netflix-home-video .content i {
     font-size: 15px;
     padding:20px ;
@@ -163,13 +172,16 @@ i {
 a:link { 
     text-decoration: none; 
 }
+
 a:visited { 
     text-decoration: none;
     color: #fff;
  }
+
 a:hover { 
     text-decoration: none;
  }
+
 a:active {
      text-decoration: none;
      }

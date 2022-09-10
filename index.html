@@ -35,7 +35,7 @@
               </button>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#">Home</a></li>
-                <li><a class="dropdown-item" href="#">Search</a></li>
+                <li><a class="dropdown-item" href="./search.html">Search</a></li>
                 <li><a class="dropdown-item" href="./myList.html">My List</a></li>
               </ul>
             </div>
@@ -43,7 +43,7 @@
             <div class="netflix-nav">
               <section>
                 <button><a href="#">Home</a></button>
-                <button>Search</button>
+                <button><a href="./search.html">Search</a></button>
                 <button><a href="./myList.html">My List</a></button>
               </section>
             </div>
@@ -70,9 +70,15 @@
           <div class="mt-2 d-flex">
             <button type="button" class="btn btn-light m-2"><i class="bi bi-play-fill"
                 style="color: #000; padding:0px;"></i>Play Now</button>
-            <button type="button" class="btn btn-secondary m-2"><i class="bi bi-info-circle" style="padding:3px;"></i>More
+            <button type="button" class="btn btn-secondary m-2" @click="showText = !showText"><i class="bi bi-info-circle" style="padding:3px;"></i>More
               Info</button>
           </div>
+          <!-- <div class="textbox" v-show="showText">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate consequuntur doloribus
+              ipsa incidunt quos sit debitis delectus numquam facere, 
+              quasi eveniet minima quo voluptatum fugit odit unde accusantium,
+               ipsam eos?
+          </div> -->
         </section>
       </div>
     </section>

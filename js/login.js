@@ -17,6 +17,7 @@ let app = new Vue({
     doLogin() {
       if (this.emailLogin === "" || this.passwordLogin === "") {
         this.emptyFields = true;
+
       } else {
         window.location.href = "./index.html"
         alert("You are now logged in");
