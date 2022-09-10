@@ -31,4 +31,10 @@ let app = new Vue({
       } else {
         alert("Welcome, you are now Registered");
       }
-    } } });
+    } 
+  },
+  
+  mounted() {
+    console.log(this.data);
+  }
+});
