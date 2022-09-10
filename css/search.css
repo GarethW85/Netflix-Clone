@@ -1,6 +1,5 @@
-
 * {
-    box-sizing: border-box;   
+    box-sizing: border-box;
 }
 
 :root {
@@ -12,7 +11,7 @@ body {
     background-color: #141414;
     font-family: 'Roboto', sans-serif;
     margin: 0;
-    position: relative;
+    position: relative; 
 }
 
 header {
@@ -21,7 +20,6 @@ header {
     justify-content: center;
     background-color: #0c0c0c;
 }
-
 
 /*  styling input */
 .search {
@@ -41,7 +39,7 @@ header {
 }
 
 .search::placeholder {
-    color: rgba(255, 255, 255, 0.453);   
+    color: rgba(255, 255, 255, 0.453);
 }
 
 /* main div */
@@ -210,7 +208,6 @@ a:active {
     color: rgba(255, 255, 255, 0.544);
     font-size: 13px;
 }
-
 
 .netflix-nav button:hover {
     color: #fff;
