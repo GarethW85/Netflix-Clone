@@ -2,7 +2,8 @@ body {
     background-color: #141414;
     overflow-x: hidden;
     position: relative;
-    height : 3000px"
+    height: "3000px";
+    font-family: 'Roboto', sans-serif;
 }
 
 .textbox {
@@ -11,7 +12,7 @@ body {
     background-color: #141414;
     color: #fff;
     padding: 2%;
-    border: 3px solid black;   
+    border: 3px solid black;
 }
 
 .netflix-padding-left {
@@ -39,7 +40,7 @@ body {
 }
 
 .navbar-brand img {
-    width: 100px;   
+    width: 100px;
 }
 
 .netflix-dropdown-box {
@@ -62,7 +63,7 @@ body {
     margin-top: 30px;
 }
 
-.netflix-dropdown-box .dropdown-menu .dropdown-item{
+.netflix-dropdown-box .dropdown-menu .dropdown-item {
     color: rgba(255, 255, 255, 0.769);
     text-align: center;
     width: 250px;
@@ -118,20 +119,21 @@ i {
     top: 0%;
     width: 100%;
     height: 60px;
-    background: linear-gradient(to top, transparent,#000);
+    background: linear-gradient(to top, transparent, #000);
 }
 
 .bottom {
     height: 60px;
-    bottom:0 ;
-    background: linear-gradient(to top, transparent,rgba(0, 0, 0, 0.822));
-    box-shadow: 30% #000;   
-    
+    bottom: 0;
+    background: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.822));
+    box-shadow: 30% #000;
+
 }
+
 /* hero banner */
 
 #hero-logo {
-    width:300px;
+    width: 300px;
 }
 
 
@@ -154,7 +156,7 @@ i {
 
 .netflix-home-video .content i {
     font-size: 15px;
-    padding:20px ;
+    padding: 20px;
 }
 
 .logOut {
@@ -165,26 +167,26 @@ i {
     align-items: center;
     justify-content: center;
     margin-left: 20px;
-    font-size: 12px;   
+    font-size: 12px;
 }
 
 /* /link styling */
-a:link { 
-    text-decoration: none; 
+a:link {
+    text-decoration: none;
 }
 
-a:visited { 
+a:visited {
     text-decoration: none;
     color: #fff;
- }
+}
 
-a:hover { 
+a:hover {
     text-decoration: none;
- }
+}
 
 a:active {
-     text-decoration: none;
-     }
+    text-decoration: none;
+}
 
 
 /* Main Content Section */
@@ -192,22 +194,23 @@ a:active {
 
 .main {
     position: relative;
-    margin-top: 60px;
+
     width: 100%;
-    padding:  40px 2.5vw;
+    padding: 40px 2.5vw;
     color: #fff;
 }
 
 .heading {
-     text-transform: capitalize;
-     font-family:900 ;
-     font-size:  50px; ;
+    text-transform: capitalize;
+    font-family: 900;
+    font-size: 50px;
+    ;
 }
 
 .info {
     width: 50%;
     font-size: 20px;
-    margin-top:10px ;
+    margin-top: 10px;
 }
 
 .movie-list {
@@ -249,13 +252,13 @@ a:active {
     position: relative;
 }
 
-.movie img{
+.movie img {
     width: 100%;
     height: 170px;
-    object-fit:cover;
+    object-fit: cover;
 }
 
-.movie p{
+.movie p {
     text-transform: capitalize;
     height: 20px;
     overflow: hidden;
@@ -281,27 +284,28 @@ a:active {
 }
 
 .nxt-btn {
-    right:-1vw;
+    right: -1vw;
 }
 
 .pre-btn i,
 .nxt-btn i {
     width: 20px;
-    height: 20px ;
+    height: 20px;
     object-fit: contain;
 }
 
 .pre-btn:hover,
 .nxt-btn:hover {
     opacity: 1;
-    color: #fff;   
+    color: #fff;
 }
+
 /* Main Content Section End */
 
 /* Footer Section */
 
 .footer {
-    margin-top:150px;
+    margin-top: 150px;
     height: 150px;
 }
 
@@ -317,4 +321,33 @@ ul {
     font-weight: 200;
     color: red;
     margin-left: 29px;
+}
+
+/* Grow Card Animation*/
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.5s;
+    transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+    transform: scale(0.9);
+}
+
+.coming-soon {
+    height: 200px;
+    width: 400px;
+    border: 5px solid #141414;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.783);
+    color: #141414;
+    text-align: center;
+    padding: 10px;
 }
