@@ -45,7 +45,12 @@ function showMovies(data) {
         <div class="overview">
           <h3>Movie Info</h3>
           ${overview}
+          <div class="single-info pt-3">
+                    <span>Add to favorites:</span>
+                    <span class="heart-icon">&#9829;</span>
+                </div>
         </div>
+       
         `
         //added created movie elements the HTML page
         main.appendChild(movieEl);

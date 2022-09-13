@@ -65,3 +65,7 @@ const makeCards = (id, data) => {
         }
     })
 }
+
+
+// Bootstrap Carousal
+

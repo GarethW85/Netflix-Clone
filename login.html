@@ -5,7 +5,7 @@
 <title>NotNetflix - Login Form</title>
 <!-- JS Links -->
 <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js'></script>
-<script src="/js/login.js" defer></script>
+<script src="./js/login.js" defer></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
 <link rel="stylesheet" href="/css/loginStyle.css">
@@ -33,9 +33,9 @@
                      id="cardOpacity">
                      <h1>Sign In</h1>
                      <form class="form-group">
-                        <input v-model="emailLogin" type="email" class="form-control" placeholder="Email" required>
-                        <input v-model="passwordLogin" type="password" class="form-control" placeholder="Password" required>
-                        <input type="submit" class="btn btn-danger" @click="doLogin">
+                        <input v-model="emailLogin" v-model.trim='data.emailLogin' type="email" class="form-control" placeholder="Email" required>
+                        <input v-model="passwordLogin" v-model.trim='data.passwordLogin' type="password" class="form-control" placeholder="Password" required>
+                        <input type="submit" class="btn btn-danger" @click="doLogin" :disabled="!(emailLogin.length && passwordLogin.length)" >
                         <p>Don't have an account? <a class="text-danger" href="#"
                               @click="registerActive = !registerActive, emptyFields = false">Sign up here</a>
                         </p>
@@ -44,10 +44,10 @@
                   <div v-else class="card register text-white" v-bind:class="{ error: emptyFields }" id="cardOpacity">
                      <h1>Sign Up</h1>
                      <form class="form-group">
-                        <input v-model="emailReg" type="email" class="form-control" placeholder="Email" required>
-                        <input v-model="passwordReg" type="password" class="form-control" placeholder="Password" required>
-                        <input v-model="confirmReg" type="password" class="form-control" placeholder="Confirm Password" required>
-                        <input type="submit" class="btn btn-danger" @click="doRegister">
+                        <input v-model="emailReg" v-model.trim='data.emailReg' type="email" class="form-control" placeholder="Email" required>
+                        <input v-model="passwordReg" v-model.trim='data.passwordReg' type="password" class="form-control" placeholder="Password" required>
+                        <input v-model="confirmReg" v-model.trim='data.confirmReg' type="password" class="form-control" placeholder="Confirm Password" required>
+                        <input type="submit" class="btn btn-danger" @click="doRegister" :disabled="!(emailReg.length && passwordReg.length && confirmReg.length)">
                         <p>Already have an account? <a class="text-danger" href="#"
                               @click="registerActive = !registerActive, emptyFields = false">Sign in here</a>
                         </p>
