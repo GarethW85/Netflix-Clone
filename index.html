@@ -1,67 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="/images/netflix logo/netflixIcon2.ico"> 
-   <!-- bootstrap CDN links -->
-    <script src="https://cdn.jsdelivr.net/npm/vuetify@3.0.0-beta.10/dist/vuetify.min.css" ></script> 
-    <script  src="https://cdn.jsdelivr.net/npm/vuetify@3.0.0-beta.10/dist/vuetify.min.js"></script>  
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <!-- css links -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="/css/mainStyle.css">
-    <link rel="stylesheet" href="/css/resposive.css"> 
-    <title>NotNetflix - Home</title>
-    <!-- jquery cdn link -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://unpkg.com/vue@3"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/images/netflix logo/netflixIcon2.ico">
+  <!-- bootstrap CDN links -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js'></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <!-- css links -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="/css/mainStyle.css">
+  <link rel="stylesheet" href="/css/resposive.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <title>NotNetflix - Home</title>
+  <script src="./js/maincarousal.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+  <!-- jquery cdn link -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
-    <!-- NotNetflix Navbar -->
-    <nav class="navbar navbar-expand-lg netflix-navbar netflix-padding-left netflix-padding-right" id="home">
-      <div class="container-fluid">
-        <div class="netflix-row">
-          <!-- left -->
-          <section class="left d-flex align-items-center">
-            <a class="navbar-brand" href="#">
-              <img src="./images/netflix logo/notnet.png" alt="">
-            </a>
-            <!-- Dropdown -->
-            <div class=" netflix-dropdown-box dropdown">
-              <button class="netflix-dropdown dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Browse
-              </button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Home</a></li>
-                <li><a class="dropdown-item" href="./search.html">Search</a></li>
-                <li><a class="dropdown-item" href="./myList.html">My List</a></li>
-              </ul>
-            </div>
-            <!-- Nav inks -->
-            <div class="netflix-nav">
-              <section>
-                <button><a href="#">Home</a></button>
-                <button><a href="./search.html">Search</a></button>
-                <button><a href="./myList.html">My List</a></button>
-              </section>
-            </div>
-          </section>
-          <!-- right -->
-          <section class="right d-flex align-items-center">
-            <img src="./images/netflix logo/userLoginImage.jpg" alt="" class="netflix-profile">
-            <button type="button" class="btn btn-danger logOut"><a href="./login.html">Log Out</a></button>
-          </section>
-        </div>
+  <!-- NotNetflix Navbar -->
+  <nav class="navbar navbar-expand-lg netflix-navbar netflix-padding-left netflix-padding-right" id="home">
+    <div class="container-fluid">
+      <div class="netflix-row">
+        <!-- left -->
+        <section class="left d-flex align-items-center">
+          <a class="navbar-brand" href="#">
+            <img src="./images/netflix logo/notnet.png" alt="">
+          </a>
+          <!-- Dropdown -->
+          <div class=" netflix-dropdown-box dropdown">
+            <button class="netflix-dropdown dropdown-toggle" type="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Browse
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Home</a></li>
+              <li><a class="dropdown-item" href="./search.html">Search</a></li>
+              <li><a class="dropdown-item" href="./myList.html">My List</a></li>
+            </ul>
+          </div>
+          <!-- Nav inks -->
+          <div class="netflix-nav">
+            <section>
+              <button><a href="#">Home</a></button>
+              <button><a href="./search.html">Search</a></button>
+              <button><a href="./myList.html">My List</a></button>
+            </section>
+          </div>
+        </section>
+        <!-- right -->
+        <section class="right d-flex align-items-center">
+          <img src="./images/netflix logo/userLoginImage.jpg" alt="" class="netflix-profile">
+          <button type="button" class="btn btn-danger logOut"><a href="./login.html">Log Out</a></button>
+        </section>
       </div>
-    </nav>
-    <!-- NotNetflix Navbar End -->
+    </div>
+  </nav>
+  <!-- NotNetflix Navbar End -->
 
-    <!-- Hero Coming Soon -->
-    <section class="netflix-home-video">
+  <!-- Hero Coming Soon -->
+  <!-- <section class="netflix-home-video">
       <div class="top"></div>
       <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
@@ -74,7 +76,6 @@
                   
                   <div id = 'app'>
                     <button type="button" class="btn btn-danger m-2 rounded-pill" @click="show = !show"><i class="bi bi-info-circle" style="padding:3px;"></i>Coming Soon</button>
-                    <!-- <button @click="show = !show">Click</button> -->
                     <div v-show="show" class="coming-soon"> 
                         <p>With the price on his head ever increasing, 
                           legendary hit man John Wick takes his fight against the High Table global as he seeks out 
@@ -98,73 +99,84 @@
         </div>
       </div>
       <div class="bottom"></div>  
-    </section>
-    <!-- Hero Coming Soon End -->
-
-    <!-- Main Section -->
-    <div class="container-fluid m-0">
-      <header class="main">
-      </header>
+    </section> -->
+  <!-- Vue JS Carousal-->
+  <section >
+    <div id="app">
+      <template class="container-fluid ">
+        <el-carousel indicator-position="outside" height="1000px" interval="9000">
+          <el-carousel-item v-for="item in 2" :key="item">
+          </el-carousel-item>
+        </el-carousel>
+      </template>
     </div>
-    <!-- Main Section End --> 
+  </section>
+  <!-- Hero Coming Soon End -->
 
-    <!-- Footer -->
-    <div class="container footer">
-      <div class="row">
-        <div class="col-md-10 mx-auto">
-          <div class="row">
-            <div class="col-md-3">
-              <ul>
-                <li>Audio Description</li>
-                <li>Investor Relation</li>
-                <li>Legal Notices</li>
-              </ul>
-            </div>
-            <div class="col-md-3">
-              <ul>
-                <li>Help Center</li>
-                <li>Jobs</li>
-                <li>Cookie Preferences</li>
-              </ul>
-            </div>
-            <div class="col-md-3">
-              <ul>
-                <li>Gift Cards</li>
-                <li>Terms of Use</li>
-                <li>Corporate Information</li>
-              </ul>
-            </div>
-            <div class="col-md-3">
-              <ul>
-                <li>Media Center</li>
-                <li>Privacy</li>
-                <li>Contact Us</li>
-              </ul>
-            </div>
+  <!-- Main Section -->
+  <div class="container-fluid m-0">
+    <header class="main">
+    </header>
+  </div>
+  <!-- Main Section End -->
+
+  <!-- Footer -->
+  <div class="container footer">
+    <div class="row">
+      <div class="col-md-10 mx-auto">
+        <div class="row">
+          <div class="col-md-3">
+            <ul>
+              <li>Audio Description</li>
+              <li>Investor Relation</li>
+              <li>Legal Notices</li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <ul>
+              <li>Help Center</li>
+              <li>Jobs</li>
+              <li>Cookie Preferences</li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <ul>
+              <li>Gift Cards</li>
+              <li>Terms of Use</li>
+              <li>Corporate Information</li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <ul>
+              <li>Media Center</li>
+              <li>Privacy</li>
+              <li>Contact Us</li>
+            </ul>
           </div>
         </div>
-        <div class="col-md-10 mx-auto">
-          <div class="row">
-            <div class="col-12">
-              <p class="copyright"><b>Designed by</b>&nbsp<b style="color:white;">GarethW</b></p>
-            </div>
+      </div>
+      <div class="col-md-10 mx-auto">
+        <div class="row">
+          <div class="col-12">
+            <p class="copyright"><b>Designed by</b>&nbsp<b style="color:white;">GarethW</b></p>
           </div>
         </div>
       </div>
     </div>
-    <!-- Footer End --> 
-    
-    <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
-    <script src="./js/comingsoon.js" ></script>
-    <Script src="./js/api.js"></Script>
-    <Script src="./js/scroll.js"></Script>
-    <Script src="./js/main.js"></Script>
-    <script src="./js/indexNavbar.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-    <!-- Scripts End -->
-</body>
+  </div>
+  <!-- Footer End -->
 
+  <!-- Scripts -->
+  <script src="//unpkg.com/vue@2/dist/vue.js"></script>
+  <script src="//unpkg.com/element-ui@2.15.8/lib/index.js"></script>
+  <script src="./js/comingsoon.js"></script>
+  <Script src="./js/api.js"></Script>
+  <Script src="./js/scroll.js"></Script>
+  <Script src="./js/main.js"></Script>
+  <script src="./js/indexNavbar.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+  <!-- Scripts End -->
+</body>
 </html>

@@ -351,3 +351,30 @@ ul {
     text-align: center;
     padding: 10px;
 }
+
+/* Vue Js Carousal Styling */
+
+  .el-carousel__item:nth-child(2n) {
+    background-image: url("https://i.pinimg.com/originals/92/63/52/92635259cc4efd0b3bf614e5c859c3b4.jpg");
+    background-color: #99a9bf;
+    background-size: cover;
+    height: 1000px;
+
+  }
+
+  .el-carousel__item:nth-child(2n+1) {
+    background-image: url("https://www.designbolts.com/wp-content/uploads/2017/01/Gru-Despicable-Me-3-Wallpaper-Wedding-Shoot-1.jpg");
+    background-color: #d3dce6;
+    background-size: cover;
+    height: 1000px;
+  }
+
+  #slider {
+    margin:0;
+    padding: 0;
+}
+/* 
+#app {
+    margin-top: 70px;
+    
+} */

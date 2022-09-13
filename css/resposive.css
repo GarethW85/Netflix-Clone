@@ -1,7 +1,5 @@
 @media (max-width: 767.98px){
-    .navbar-brand img {
-        width: 43px !important;
-    }
+    
 
     .netflix-padding-left {
         padding-left: 10px !important;
@@ -69,7 +67,24 @@
         height: 30px;
         font-size: 10px;
     }
+
+    .el-carousel__item:nth-child(2n) {
+        background-image: url("https://cdn.wallpapersafari.com/48/61/8uO9Kp.jpg");
+        width: 500px !important;
+        height: 700px;
+        
+ 
+    }
     
+    .el-carousel__item:nth-child(2n+1) {
+        background-image: url("https://images.hdqwalls.com/download/despicable-me-3-minions-4k-v0-1280x2120.jpg");
+        width: 500px !important;
+        height: 700px;
+    }
+
+    .el-carousel__container {
+        height: 700px !important;
+    }
 }
 
 
