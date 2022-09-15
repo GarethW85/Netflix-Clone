@@ -70,16 +70,17 @@
 
     .el-carousel__item:nth-child(2n) {
         background-image: url("https://cdn.wallpapersafari.com/48/61/8uO9Kp.jpg");
-        width: 500px !important;
+        width: 600px !important;
         height: 700px;
-        
- 
+        background-size: cover;
     }
     
     .el-carousel__item:nth-child(2n+1) {
         background-image: url("https://images.hdqwalls.com/download/despicable-me-3-minions-4k-v0-1280x2120.jpg");
-        width: 500px !important;
+        width: 600px !important;
         height: 700px;
+        
+        background-size: cover;
     }
 
     .el-carousel__container {
