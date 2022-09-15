@@ -46,8 +46,8 @@ function showMovies(data) {
           <h3>Movie Info</h3>
           ${overview}
           <div class="single-info pt-3">
-                    <span>Add to favorites:</span>
-                    <span class="heart-icon">&#9829;</span>
+                    <span>Add to favorites:</span>          
+                    <button style="font-size:24px; background-color:transparent; border:0;"><i class="fa fa-heart"></i></button>
                 </div>
         </div>
        
@@ -84,5 +84,4 @@ form.addEventListener('submit', (e) => {
     }
 
 })
-
 
