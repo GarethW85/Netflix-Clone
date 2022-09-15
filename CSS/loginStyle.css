@@ -4,6 +4,11 @@ body {
 
 p {
     line-height: 1rem;
+    color: #fff;
+}
+
+h1 {
+    color: #fff;
 }
 
 #netflixLogo {
@@ -104,4 +109,24 @@ p {
     100% {
         transform: translateX(0);
     }
+}
+
+a:link {
+    text-decoration: none;
+    color: rgb(193, 6, 6);
+}
+
+a:visited {
+    text-decoration: none;
+    color: rgb(193, 6, 6);
+}
+
+a:hover {
+    text-decoration: none;
+    color: rgb(193, 6, 6);
+}
+
+a:active {
+    text-decoration: none;
+    color: rgb(193, 6, 6);
 }

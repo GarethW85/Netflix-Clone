@@ -22,6 +22,7 @@ let app = new Vue({
         window.location.href = "./index.html"
         alert("You are now logged in");
         
+        
       }
     },
 
