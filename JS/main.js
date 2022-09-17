@@ -52,7 +52,7 @@ const makeCards = (id, data) => {
         }
 
         movieContainer.innerHTML += `
-        <div class="movie hvr-grow" onclick="location.href = '#'">
+        <div class="movie hvr-grow" onclick="location.href = '/search.html'">
             <img src="${img_url}${item.backdrop_path}" alt="" width="300px">
             <p class="movie-title">${item.title}</p>
         </div>

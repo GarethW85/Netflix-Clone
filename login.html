@@ -17,6 +17,7 @@
     <title>NotNetflix | Login</title>
 </head>
 <body>
+    
     <div id="app">
         <div class="login-page">
             <transition name="fade">
@@ -30,8 +31,8 @@
                         <div v-if="!registerActive" class="card login" id="cardOpacity" v-bind:class="{ error: emptyFields }">
                             <h1>Sign In</h1>
                             <form class="form-group ">
-                                <input v-model="emailLogin" type="email" class="form-control" placeholder="Email" required >
-                                <input v-model="passwordLogin" type="password" class="form-control" placeholder="Password" required>
+                                <input v-model.trim="emailLogin" type="email" class="form-control" placeholder="Email" required >
+                                <input v-model.trim="passwordLogin" type="password" class="form-control" placeholder="Password" required>
                                 <input type="submit" class="btn btn-danger" @click="doLogin" :disabled="!(emailLogin.length && passwordLogin.length)">
                                 <p>Don't have an account? <a href="#" @click="registerActive = !registerActive, emptyFields = false">Sign up here</a>
                                 </p>
@@ -40,12 +41,12 @@
                         <div v-else class="card register" id="cardOpacity" v-bind:class="{ error: emptyFields }">
                             <h1>Sign Up</h1>
                             <form class="form-group">
-                                <input v-model="emailReg" type="email" class="form-control" placeholder="Email" required>
+                                <input v-model.trim="emailReg" type="email" class="form-control" placeholder="Email" required>
                                 <input v-model="passwordReg" type="password" class="form-control" placeholder="Password"
                                     required>
                                 <input v-model="confirmReg" type="password" class="form-control"
                                     placeholder="Confirm Password" required>
-                                <input type="submit" class="btn btn-danger" @click="doRegister" :disabled="!(emailLogin.length && passwordLogin.length && confirmReg.length)">
+                                <input type="submit" class="btn btn-danger" @click="doRegister" >
                                 <p>Already have an account? <a href="#"
                                         @click="registerActive = !registerActive, emptyFields = false">Sign in here</a>
                                 </p>

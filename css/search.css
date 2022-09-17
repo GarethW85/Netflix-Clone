@@ -4,7 +4,7 @@
 
 :root {
     --primary-color: #141414;
-    --secondary-color: red;
+    --secondary-color: #ff0000;
 }
 
 body {
@@ -76,6 +76,7 @@ main {
 
 .movie-info h3 {
     margin-top: 0;
+    font-size: 25px;
 }
 
 .movie-info span {
@@ -104,11 +105,13 @@ main {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #fff;
+    background-color: rgb(100, 100, 100);
     padding: 1rem;
     max-height: 100%;
     transform: translateY(101%);
     transition: transform 0.4s ease-in;
+    color: #fff;
+    text-align: center;
 }
 
 .movie:hover .overview {

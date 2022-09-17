@@ -14,15 +14,16 @@ let app = new Vue({
 
 
   methods: {
+
+
     doLogin() {
-      if (this.emailLogin === "" || this.passwordLogin === "") {
+      if (this.emailLogin === "" || this.passwordLogin.length < 7) {
         this.emptyFields = true;
 
       } else {
         window.location.href = "./index.html"
         alert("You are now logged in");
-        
-        
+  
       }
     },
 
