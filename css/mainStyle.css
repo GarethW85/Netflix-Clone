@@ -55,11 +55,11 @@ body {
 }
 
 .netflix-dropdown-box .dropdown-menu {
-    background-color: rgba(0, 0, 0, 0.796);
+    background-color: rgba(0, 0, 0, 0.742);
     font-size: 9px !important;
     color: white !important;
     margin-left: -80px;
-    border-top: 3px solid #fff;
+    /* border-top: 3px solid #fff; */
     margin-top: 30px;
 }
 
@@ -373,8 +373,3 @@ ul {
     margin:0;
     padding: 0;
 }
-/* 
-#app {
-    margin-top: 70px;
-    
-} */
