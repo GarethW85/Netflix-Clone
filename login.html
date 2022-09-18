@@ -31,22 +31,22 @@
                         <div v-if="!registerActive" class="card login" id="cardOpacity" v-bind:class="{ error: emptyFields }">
                             <h1>Sign In</h1>
                             <form class="form-group ">
-                                <input v-model.trim="emailLogin" type="email" class="form-control" placeholder="Email" required >
-                                <input v-model.trim="passwordLogin" type="password" class="form-control" placeholder="Password" required>
-                                <input type="submit" class="btn btn-danger" @click="doLogin" :disabled="!(emailLogin.length && passwordLogin.length)">
+                                <input v-model.trim="emailLogin" type="email" name="email" class="form-control" placeholder="Email" required >
+                                <input v-model.trim="passwordLogin" type="password" name="password" class="form-control" placeholder="Password" required>
+                                <input type="submit" class="btn btn-danger" @click="Login" :disabled="!(emailLogin.length && passwordLogin.length)">
                                 <p>Don't have an account? <a href="#" @click="registerActive = !registerActive, emptyFields = false">Sign up here</a>
                                 </p>
                             </form>
                         </div>
                         <div v-else class="card register" id="cardOpacity" v-bind:class="{ error: emptyFields }">
                             <h1>Sign Up</h1>
-                            <form class="form-group">
-                                <input v-model.trim="emailReg" type="email" class="form-control" placeholder="Email" required>
-                                <input v-model="passwordReg" type="password" class="form-control" placeholder="Password"
+                            <form class="form-group" name="f1">
+                                <input v-model.trim="emailReg" type="email" name="emailreg" class="form-control" placeholder="Email" required>
+                                <input v-model="passwordReg" type="password" name="passwordreg" class="form-control" placeholder="Password"
                                     required>
-                                <input v-model="confirmReg" type="password" class="form-control"
+                                <input v-model="confirmReg" type="password" name="passwordconf" class="form-control"
                                     placeholder="Confirm Password" required>
-                                <input type="submit" class="btn btn-danger" @click="doRegister" >
+                                <input type="submit" class="btn btn-danger" @click="Register" >
                                 <p>Already have an account? <a href="#"
                                         @click="registerActive = !registerActive, emptyFields = false">Sign in here</a>
                                 </p>

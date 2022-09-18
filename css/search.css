@@ -150,7 +150,7 @@ main {
 
 
 .logOut {
-    background-color: rgb(119, 6, 6);
+    background-color: #E50914;
     color: rgba(255, 255, 255, 0.865);
     height: 30px;
     display: flex;
@@ -158,6 +158,11 @@ main {
     justify-content: center;
     margin-left: 20px;
     font-size: 12px;
+}
+
+.logOut:hover {
+    background-color: #E50914;
+    border: 1px solid rgb(122, 1, 1);
 }
 
 /* /link styling */
