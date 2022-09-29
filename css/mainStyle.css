@@ -379,3 +379,9 @@ ul {
     margin:0;
     padding: 0;
 }
+
+/* v-show */
+
+.v-show {
+    margin: 40% 50px;
+}

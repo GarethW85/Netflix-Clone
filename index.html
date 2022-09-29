@@ -66,11 +66,23 @@
   <section >
     <div id="app">
       <template class="container-fluid ">
+        
         <el-carousel indicator-position="outside" height="1000px" interval="9000">
           <el-carousel-item v-for="item in 2" :key="item">
+            <div class="v-show">
+              <button type="button" class="btn btn-danger m-2" @click="show = !show"><i class="bi bi-info-circle"
+                  style="padding:3px;"></i>Coming Soon</button>
+              <div v-show="show" class="coming-soon">
+                <p>From Jurassic Park to The Minions , NotNetflix has it all. Theres 2 great movies 
+                  will dropping in the new year so stay tuned to your screens for more up and coming movies<br><br>
+                  <b>Release date: 24 March 2023 (USA)</b>
+                </p>
+              </div>
+            </div>
           </el-carousel-item>
         </el-carousel>
       </template>
+      
     </div>
   </section>
   <!-- Hero Coming Soon End -->
