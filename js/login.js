@@ -37,19 +37,6 @@ let app = new Vue({
 
       let regEmail=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/g;
 
-      // if (password1==password2) {
-      //   alert("Welcome, you are now Registered");
-      //   return true;     
-      // } 
-      //  else if (this.passwordReg.length <6){
-      //   alert("Password must be at least 6 characters long.");
-      //   return false;
-      // }
-      // else {
-      //   alert("Passwords do not match!");
-      //   return false;
-      // }
-
       if (this.passwordReg.length <6) {
         alert("Password must be at least 6 characters long.");
         return false;     
@@ -67,5 +54,12 @@ let app = new Vue({
   
   mounted() {
     console.log(this.data);
+  },
+
+  computed : {
+    logindetails : function(){
+        return this.emailLogin+ "" + this.passwordLogin;
+    }
   }
 });
+

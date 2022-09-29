@@ -148,6 +148,12 @@ main {
     display: none;
 }
 
+.netflix-dropdown {
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    font-size: 9px;
+}
 
 .logOut {
     background-color: #E50914;

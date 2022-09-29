@@ -72,21 +72,18 @@
         background-image: url("https://i.pinimg.com/originals/2d/0e/ee/2d0eee6c6235e24fa46fd584d809cc5a.jpg");
         width: 100% !important;
         height: 800px;
+
     }
     
     .el-carousel__item:nth-child(2n+1) {
         background-image: url("https://images5.alphacoders.com/507/thumb-1920-507979.png");
         width: 100% !important;
         height: 800px;
-        background-position: center;
+        background-position: center;    
     }
 
     .el-carousel__container {
         height: 700px !important;
     }
-
-    
 }
 
-
-/* Navbar Responsive */
