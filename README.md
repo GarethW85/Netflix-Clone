@@ -1,6 +1,6 @@
 # Netflix Clone
 
-Created a Netflix Clone using Html, CSS , Bootstrap, Javascript & VueJs.
+Created a Netflix Clone using Html, CSS , Bootstrap, Javascript, VueJs & TMDB Api.
 
 ## Installation
 
@@ -16,7 +16,7 @@ Login Page that redirects at successful login.
 
 The landing page is populated with forthcoming movies in the hero section.
 
-The latest movies are displayed in slider carousels. 
+The latest movies are displayed in slider carousels using TMDB Api fetching. 
 
 A movie filter page that allows you to search for movies based on the name.
 
